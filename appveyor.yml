@@ -5,13 +5,11 @@ branches:
   only:
     - master
 
-before_install:
+install:
   - pip install -U pip setuptools wheel
   - pip install -r requirements-test.txt
   - flake8
   - isort --check-only --recursive .
-
-install:
   - python setup.py -q develop
 
 before_script:
