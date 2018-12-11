@@ -11,10 +11,11 @@ install:
   - flake8
   - isort --check-only --recursive .
   - python setup.py -q develop
-
-before_script:
   - mkdir docs/source/_static
   - sphinx-build -W -b html docs/source docs/_build
+
+
+
 
   
 test_script:
