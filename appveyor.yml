@@ -14,13 +14,9 @@ install:
   - "conda create -q -n test-environment python=%PYTHON_VERSION% pip setuptools wheel nose"
   - activate test-environment
   - pip install -r requirements-test.txt
-  - flake8
-  - isort --check-only --recursive .
 
   - python setup.py -q develop
 
-  - mkdir docs/source/_static
-  - sphinx-build -W -b html docs/source docs/_build
   
 test_script:
    - nosetests --with-coverage --cover-package=netjsonconfig
