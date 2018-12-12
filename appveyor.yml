@@ -1,7 +1,4 @@
 build: false
-
-image:
-    - Ubuntu
     
 environment:
     matrix:
