@@ -1,6 +1,8 @@
 build: false
 
-
+image:
+    - Ubuntu
+    
 environment:
     matrix:
         - PYTHON_VERSION: 2.7
