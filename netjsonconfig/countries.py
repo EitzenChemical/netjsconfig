@@ -224,8 +224,7 @@ countries = OrderedDict((
     (
         "Croatia",
         "HR"
-    ),
-    
+    ),    
     (
         "Cuba",
         "CU"
