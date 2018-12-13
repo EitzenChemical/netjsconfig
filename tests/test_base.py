@@ -1,4 +1,5 @@
 import unittest
+
 from io import BytesIO
 
 from netjsonconfig.backends.base.backend import BaseBackend
