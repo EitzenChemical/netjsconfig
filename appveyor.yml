@@ -24,9 +24,5 @@ install:
 
 
 
-
-
-
-  
 test_script:
-   - nosetests
+   - nosetests --with-coverage --cover-package=netjsonconfig
